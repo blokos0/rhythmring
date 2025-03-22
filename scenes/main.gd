@@ -1,13 +1,13 @@
 extends Node2D
-var bpm: float = 183
+var bpm: float = 160
 var timesec: float # normal time
 var timebeat: float # aligned to the beat
 var timebeatprev: float = -1
-var chart: PackedFloat32Array = [1, 2, 3, 4, 5, 6, 6.5, 7, 7.5, 8, 9, 10, 11, 11.5, 12, 13, 14, 15, 15.5, 16, 17, 18, 19, 19.5, 20, 21, 22, 23, 23.5, 24, 24.5, 25, 25.5, 26, 26.5, 27, 27.5, 28, 28.5, 29, 29.5, 30, 30.5, 31, 31.5, 32]
+var chart: PackedFloat32Array = [1, 1.5, 2.5, 3, 3.5, 4.5, 5.25, 5.5, 6, 7, 7.5, 8, 9, 9.5, 10.5, 11, 11.25, 11.5, 12.5, 13, 13.5, 13.875, 14, 14.5, 15, 15.5, 16]
 var chartnext: int # index of the next chart note
 var charthit: int # index of the last hit note
 func _ready() -> void:
-	$music.stream = ResourceImporterOggVorbis.load_from_file("music/heatabnormal.ogg")
+	$music.stream = ResourceImporterOggVorbis.load_from_file("music/consider.ogg")
 	$music.play()
 func _process(delta: float) -> void:
 	if floorf(timebeat) != floorf(timebeatprev):
