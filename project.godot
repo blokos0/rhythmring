@@ -26,7 +26,6 @@ gdscript/warnings/inferred_declaration=2
 
 window/size/viewport_width=512
 window/size/viewport_height=288
-window/stretch/mode="viewport"
 
 [editor]
 
