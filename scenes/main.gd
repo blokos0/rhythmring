@@ -53,7 +53,7 @@ func beat() -> void:
 	pass # something will probably happen here
 func _draw() -> void:
 	var ringouterrad: float = 112
-	var ringinnerrad: float = 82 + sin(timebeat * PI / 4) * 10
+	var ringinnerrad: float = 82
 	var playerrad: float = (ringouterrad - ringinnerrad) / 2
 	draw_circle(Vector2(256, 144), ringouterrad, Color.WHITE, false, 2)
 	draw_circle(Vector2(256, 144), ringinnerrad, Color.WHITE, false, 2)
